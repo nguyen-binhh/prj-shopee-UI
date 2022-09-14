@@ -1,0 +1,13 @@
+.gap {
+  gap: 0 20px;
+  color: #333;
+}
+
+.right {
+  margin-left: 80px;
+}
+
+.font-bold {
+  font-weight: 600;
+  font-size: 14px;
+}

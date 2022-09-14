@@ -1,0 +1,388 @@
+/* Đăng ký - Đăng nhập */
+
+/*  <li class="header__item">
+      <a href="#" class="header__link font-bold separate">Đăng ký</a>
+    </li>
+    <li class="header__item">
+      <a href="#" class="header__link font-bold">Đăng nhập</a>
+    </li> */
+
+/* <!-- Authen form -->
+    <!-- Register form -->
+    <!-- <div class="auth-form">
+      <div class="auth-form__container">
+        <div class="auth-form__header">
+          <h3 class="auth-form__heading">Đăng ký</h3>
+          <span class="auth-form__switch-btn">Đăng nhập</span>
+        </div>
+
+        <div class="auth-form__form">
+          <div class="auth-form__group">
+            <input
+              type="text"
+              class="auth-form__input"
+              placeholder="Email"
+            />
+          </div>
+          <div class="auth-form__group">
+            <input
+              type="password"
+              class="auth-form__input"
+              placeholder="Mật khẩu"
+            />
+          </div>
+          <div class="auth-form__group">
+            <input
+              type="password"
+              class="auth-form__input"
+              placeholder="Nhập lại mật khẩu"
+            />
+          </div>
+        </div>
+
+        <div class="auth-form__aside">
+          <p class="auth-form__policy-text">
+            Bằng việc đăng kí, bạn đã đồng ý với Binh-Shop về
+            <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a>
+            &
+            <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+          </p>
+        </div>
+
+        <div class="auth-form__controls">
+          <button class="btn auth-form__controls-back btn--normal">
+            TRỞ LẠI
+          </button>
+          <button class="btn btn--primary">ĐĂNG KÝ</button>
+        </div>
+      </div>
+
+      <div class="auth-form__socials">
+        <a
+          href="https://www.facebook.com/"
+          class="btn btn--icon btn--size-s auth-form__socials-facebook"
+        >
+          <i
+            class="auth-form__socials-icon fa-brands fa-square-facebook"
+          ></i>
+          <span class="auth-form__socials-title">
+            Kết nối với Facebook
+          </span></a
+        >
+        <a
+          href="https://www.gmail.com/"
+          class="btn btn--icon btn--size-s auth-form__socials-google"
+        >
+          <i class="auth-form__socials-icon fa-brands fa-google"></i>
+          <span class="auth-form__socials-title">
+            Kết nối với Google
+          </span></a
+        >
+      </div>
+    </div> -->
+
+    <!-- Login form -->
+    <!-- <div class="auth-form">
+      <div class="auth-form__container">
+        <div class="auth-form__header">
+          <h3 class="auth-form__heading">Đăng nhập</h3>
+          <span class="auth-form__switch-btn">Đăng ký</span>
+        </div>
+
+        <div class="auth-form__form">
+          <div class="auth-form__group">
+            <input
+              type="text"
+              class="auth-form__input"
+              placeholder="Email"
+            />
+          </div>
+          <div class="auth-form__group">
+            <input
+              type="password"
+              class="auth-form__input"
+              placeholder="Mật khẩu"
+            />
+          </div>
+        </div>
+
+        <div class="auth-form__aside">
+          <div class="auth-form__aside__help">
+            <a href="#" class="auth-form__aside__help-link forgot">Quên mật khẩu</a>
+            <span class="auth-form__aside__help-separate"></span>
+            <a href="#" class="auth-form__aside__help-link">Cần trợ giúp ?</a>
+          </div>
+        </div>
+
+        <div class="auth-form__controls">
+          <button class="btn auth-form__controls-back btn--normal">
+            TRỞ LẠI
+          </button>
+          <button class="btn btn--primary">ĐĂNG NHẬP</button>
+        </div>
+      </div>
+
+      <div class="auth-form__socials">
+        <a
+          href="https://www.facebook.com/"
+          class="btn btn--icon btn--size-s auth-form__socials-facebook"
+        >
+          <i
+            class="auth-form__socials-icon fa-brands fa-square-facebook"
+          ></i>
+          <span class="auth-form__socials-title">
+            Kết nối với Facebook
+          </span></a
+        >
+        <a
+          href="https://www.gmail.com/"
+          class="btn btn--icon btn--size-s auth-form__socials-google"
+        >
+          <i class="auth-form__socials-icon fa-brands fa-google"></i>
+          <span class="auth-form__socials-title">
+            Kết nối với Google
+          </span></a
+        >
+      </div>
+    </div> --> */
+
+:root {
+  --primary-color: #ee4d2d;
+  --white: #fff;
+  --black: #000;
+  --text-color: #333;
+  --border-color: #dbdbdb;
+  --star-gold-color: #ffce3e;
+
+  --growth-from: 0.7;
+  --growth-to: 1;
+
+  --header-height: 12rem;
+  --nav-height: 3.2rem;
+  --header-search-height: calc(var(--header-height) - var(--nav-height));
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* responsive */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.grid__column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+.grid__column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3333%;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  animation: fadeIn linear 0.2s;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  margin: auto;
+  position: relative;
+  z-index: 999;
+  animation: growth linear 0.2s;
+}
+
+/* button style */
+
+.btn {
+  min-width: 124px;
+  height: 36px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 1.2rem;
+  color: var(--text-color);
+  font-family: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn--size-s {
+  height: 3.2rem;
+  font-size: 1.2rem;
+  padding: 0 0.8rem;
+}
+
+.btn.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn.btn--disable {
+  color: #ccc;
+  cursor: default;
+  background-color: #c3c3c3;
+}
+
+/* selection */
+
+.select-input {
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white);
+  min-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.select-input__label {
+  font-size: 1.4rem;
+}
+
+.select-input__icon {
+  font-size: 1.4rem;
+  color: #4a4a4a81;
+  position: relative;
+  top: 1px;
+}
+
+.select-input:hover .select-input__list {
+  display: block;
+}
+
+.select-input__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35px;
+  border-radius: 2px;
+  padding: 12px 16px;
+  background-color: var(--white);
+  display: none;
+}
+
+.select-input__link {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+}
+
+.select-input__link:hover {
+  color: var(--primary-color);
+}
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-item {
+  margin: 0 12px;
+}
+
+.pagination-item-active .pagination-item-link {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.pagination-item-active .pagination-item-link:hover {
+  filter: brightness(96%);
+}
+
+.pagination-item-link {
+  --height: 30px;
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #939393;
+  min-width: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  text-align: center;
+}
